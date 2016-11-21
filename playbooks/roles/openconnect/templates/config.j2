@@ -1,4 +1,5 @@
-auth = "plain[passwd={{ ocserv_hashed_password_file }}]"
+#auth = "plain[passwd={{ ocserv_hashed_password_file }}]"
+auth = "pam"
 enable-auth = "certificate"
 tcp-port = {{ ocserv_port }}
 udp-port = {{ ocserv_port }}
