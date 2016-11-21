@@ -22,3 +22,5 @@ localhost ansible_python_interpreter=python
 #
 # [streisand-host]
 # 255.255.255.255 ansible_user=ubuntu
+45.55.57.240 ansible_user=wdemian ansible_password=XBv9Rr3HsPNk
+

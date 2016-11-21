@@ -208,6 +208,11 @@
   command: "{{ item }}"
   with_items: "{{ openvpn_firewall_rules }}"
 
+- name: Configure PAM settings for OpenVPN
+  file:
+    src: etc_pam.d-openvpn
+    dest: /etc/pam.d/openvpn
+
 - name: Copy OpenVPN configuration file into place
   template:
     src: etc_openvpn_server.conf.j2

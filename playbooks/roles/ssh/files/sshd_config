@@ -24,7 +24,7 @@ Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.
 MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512,hmac-sha2-256,umac-128@openssh.com
 
 # Password based logins are disabled - only public key based logins are allowed.
-AuthenticationMethods publickey
+#AuthenticationMethods publickey
 PermitRootLogin Yes
 
 # Disable logging.
@@ -38,6 +38,6 @@ Subsystem sftp  /usr/lib/openssh/sftp-server -f AUTHPRIV -l QUIET
 UsePrivilegeSeparation sandbox
 
 # Enable PAM.
-PasswordAuthentication no
+PasswordAuthentication yes
 ChallengeResponseAuthentication no
 UsePAM yes
