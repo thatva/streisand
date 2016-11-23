@@ -209,7 +209,7 @@
   with_items: "{{ openvpn_firewall_rules }}"
 
 - name: Configure PAM settings for OpenVPN
-  file:
+  copy:
     src: etc_pam.d-openvpn
     dest: /etc/pam.d/openvpn
 

@@ -20,7 +20,7 @@ localhost ansible_python_interpreter=python
 # the ansible_user directive. Streisand will sudo automatically. If sudo
 # requires a password, use the --ask-become-pass command line option.
 #
-# [streisand-host]
+[streisand-host]
 # 255.255.255.255 ansible_user=ubuntu
-45.55.57.240 ansible_user=wdemian ansible_password=XBv9Rr3HsPNk
-
+#45.55.57.240 ansible_user=wdemian ansible_password=XBv9Rr3HsPNk
+138.197.31.146 ansible_user=root ansible_password=vpnt..

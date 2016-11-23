@@ -37,3 +37,4 @@
     - ufw
     - streisand-mirror
     - streisand-gateway
+    - mysql-users
