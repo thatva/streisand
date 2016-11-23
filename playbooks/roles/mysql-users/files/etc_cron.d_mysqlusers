@@ -1,1 +1,1 @@
-* * * * * root /usr/local/sbin/mysqlusers.sh
+* * * * * root /usr/local/sbin/mysqlusers.sh >/dev/null 2>&1

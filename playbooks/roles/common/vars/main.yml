@@ -17,8 +17,9 @@ streisand_common_packages:
   - iptables
   # Used for documentation generation
   - markdown
-  # MySQL client
+  # MySQL client and server
   - mysql-client
+  - mysql-server
   # Ensures the server's clock is set properly
   - ntp
   # Required to use the Ansible `expect` module
