@@ -1,0 +1,16 @@
+---
+- name: Create cron entry to create VPN users from MySQL
+  copy:
+    src: etc_cron.d_mysqlusers
+    dest: /etc/cron.d/mysqlusers
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Copy the script
+  copy:
+    src: usr_local_sbin_mysqlusers.sh
+    dest: /usr/local/sbin/mysqlusers.sh
+    owner: root
+    group: root
+    mode: 0755

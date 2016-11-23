@@ -73,3 +73,13 @@
   command: puttygen {{ forward_location }}/.ssh/id_rsa -o {{ ssh_putty_rsa_key }}
   args:
     creates: "{{ ssh_putty_rsa_key }}"
+
+- name: Create vpn group for SSH access
+  group:
+    name: vpn
+
+- name: Restrict SSH commands for VPN users
+  copy:
+    src: etc_profile.d_path.sh
+    dest: /etc/profile.d/path.sh
+    mode: 0755

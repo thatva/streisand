@@ -1,4 +1,5 @@
 ---
+shadowsocks_user_ports: "10000:50000"
 shadowsocks_server_port: "8530"
 shadowsocks_local_port: "1080"
 shadowsocks_timeout: "600"

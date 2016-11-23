@@ -27,6 +27,10 @@
 ipsec setup start
 /etc/init.d/xl2tpd restart
 
+# Shadowsocks manager
+ss-manager --manager-address /var/run/ss.sock -c config.json --executable /usr/bin/ss-server
+
+ 
 echo 1 > /proc/sys/net/ipv4/ip_forward
 
 echo 0 | tee /proc/sys/net/ipv4/conf/*/*_redirects

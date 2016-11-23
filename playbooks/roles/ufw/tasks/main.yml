@@ -89,6 +89,13 @@
     proto: "tcp"
     rule: "allow"
 
+- name: Ensure UFW allows Shadowsocks user ports
+  ufw:
+    to_port: "{{ shadowsocks_user_ports }}"
+    proto: "tcp"
+    rule: "allow"
+
+
 - name: Ensure UFW allows stunnel
   ufw:
     to_port: "{{ stunnel_remote_port }}"
@@ -106,3 +113,5 @@
     to_port: "{{ tor_obfs4_port }}"
     proto: "tcp"
     rule: "allow"
+
+
