@@ -29,6 +29,9 @@ streisand_common_packages:
   # Used to generate convenient QR codes for mobile clients in the
   # Shadowsocks and Tor roles
   - qrencode
+  # socat
+  # To detect used ports 
+  - socat
   # Used for automatically installing security updates
   - unattended-upgrades
   # Word List dictionary used by several roles to generate random
