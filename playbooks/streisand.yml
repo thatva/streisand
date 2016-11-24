@@ -35,6 +35,6 @@
     - sslh
     - monit
     - ufw
+    - mysql-users
     - streisand-mirror
     - streisand-gateway
-    - mysql-users
