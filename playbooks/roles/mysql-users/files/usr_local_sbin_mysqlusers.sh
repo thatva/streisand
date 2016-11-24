@@ -23,7 +23,7 @@ del_shell_user() {
 add_ss_user() {
   if ! ( lsof -t -i :$1 >/dev/null 2>&1 ); then
      echo add shadowsocks $1
-     echo ' add: {"server_port": '${1}', "password":"'${user_password}'"}' | socat - GOPEN:/var/run/ss.sock
+     echo ' add: {"server_port": '${1}', "password":"'${2}'"}' | socat - GOPEN:/var/run/ss.sock
   fi
 
 }
