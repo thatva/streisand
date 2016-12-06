@@ -29,6 +29,20 @@
   command: cat {{ shadowsocks_password_file }}
   register: shadowsocks_password
 
+- name: Multi-User: create ss systemd override dir
+  file:
+    path: /etc/systemd/system/shadowsocks-libev.service.d
+    recurse: yes
+    state: directory
+
+- name: Multi-User: configure SS manager service
+  copy:
+    src: systemd-shadowsocks-libev_override.conf
+    dest: /etc/systemd/system/shadowsocks-libev.service.d/override.conf
+    mode: 0640
+  notify: Reload systemd 
+
+
 - name: Generate Shadowsocks config file
   template:
     src: config.json.j2
