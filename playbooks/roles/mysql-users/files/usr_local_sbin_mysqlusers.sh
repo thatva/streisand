@@ -49,7 +49,7 @@ del_l2tpd_user() {
 }
 
 
-mapfile -t user < <(echo select name,secret,ssport,status from users | mysql -h $mysql_host -u $mysql_user -s -p${mysql_pass} $mysql_db 2>/dev/null)
+mapfile -t user < <(echo select name,secret,ssport,status from users | mysql -h $mysql_host -u $mysql_user -p${mysql_pass} $mysql_db 2>/dev/null)
 
 for u in $(seq 1 $((${#user[@]} - 1))); do
    user_attrs=( $(echo ${user[$u]}) )
