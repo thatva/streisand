@@ -1,4 +1,6 @@
 #!/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
 
 mysql_host=localhost
 mysql_db=vpnusers
