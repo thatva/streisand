@@ -3,6 +3,7 @@
 Streisand
 =========
 
+
 **Silence censorship. Automate the [effect](https://en.wikipedia.org/wiki/Streisand_effect).**
 
 The Internet can be a little unfair. It's way too easy for ISPs, telecoms, politicians, and corporations to block access to the sites and information that you care about. But breaking through these restrictions is *tough*. Or is it?
